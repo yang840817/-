@@ -1,0 +1,23 @@
+@use "../abstracts/" as *;
+
+@use "../components/compare_container.scss";
+@use "../components/model_select.scss";
+@use "../components/model_img.scss";
+@use "../components/model_color.scss";
+@use "../components/model_price.scss";
+@use "../components/model_purchase.scss";
+@use "../components/model_chip.scss";
+@use "../components/model_support.scss";
+
+.main_container {
+  padding: 32px 12px 64px;
+  h2 {
+    margin: 64px 0;
+    text-align: center;
+    font-weight: normal;
+    font-size: 40px;
+    @include breakpoint($md) {
+      font-size: 66px;
+    }
+  }
+}

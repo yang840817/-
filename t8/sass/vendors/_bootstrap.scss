@@ -1,0 +1,13 @@
+@use "../abstracts/" as *;
+.container-fluid {
+  max-width: 1035px;
+  min-width: 320px;
+}
+.navbar {
+  --bs-navbar-hover-color: #fff;
+  .dropdown-menu {
+    @include breakpoint($xl) {
+      width: 300px;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@use "../abstracts/" as *;
+
+.model_support {
+  > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  i {
+    font-size: 75px;
+  }
+}

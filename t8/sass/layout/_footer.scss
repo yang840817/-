@@ -1,0 +1,76 @@
+@use "../abstracts/" as *;
+footer {
+  background: #f5f5f7;
+}
+.footer_container {
+  padding: 16px 24px;
+  font-size: 12px;
+}
+.find_shop {
+  text-align: center;
+  @include breakpoint($xl) {
+    text-align: unset;
+  }
+  span {
+    display: block;
+    @include breakpoint($xl) {
+      display: unset;
+    }
+  }
+}
+.footer_nav_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  @include breakpoint($xl) {
+    display: block;
+  }
+  a {
+    color: black;
+  }
+  ul {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    @include breakpoint($xl) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  li {
+    position: relative;
+    @include breakpoint($xl) {
+      + li::before {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+        width: 1px;
+        height: 10px;
+        background-color: #d2d2d7;
+        content: "";
+      }
+    }
+    a {
+      display: inline-block;
+      padding: 0 10px;
+    }
+  }
+}
+.copyright {
+  @include breakpoint($xl) {
+    position: absolute;
+    top: 10px;
+    left: 0;
+  }
+}
+.country {
+  @include breakpoint($xl) {
+    position: absolute;
+    top: 10px;
+    right: 0;
+  }
+}

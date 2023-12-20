@@ -1,0 +1,10 @@
+@use "../abstracts/" as *;
+
+@use "../vendors/bootstrap";
+header {
+  background-color: #3a3a3a;
+  .shopbag {
+    display: block;
+    color: white;
+  }
+}

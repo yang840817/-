@@ -1,0 +1,14 @@
+@use "../abstracts/" as *;
+
+.model_purchase {
+  > div {
+    padding-top: 48px;
+  }
+  a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0073eb;
+    color: white;
+    border-radius: 20px;
+  }
+}

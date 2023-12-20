@@ -1,0 +1,13 @@
+@use "../abstracts/" as *;
+.bg_silver {
+  background-color: $silver;
+}
+.bg_midnight {
+  background: $midnight;
+}
+.bg_gold {
+  background: $gold;
+}
+.bg_gray {
+  background: $gray;
+}

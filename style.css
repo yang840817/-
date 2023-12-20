@@ -1,0 +1,49 @@
+* {
+  /* outline: 1px solid red; */
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: no-repeat
+    url("https://c4.wallpaperflare.com/wallpaper/959/996/956/night-city-window-rain-skyscrapers-wallpaper-preview.jpg");
+  background-size: cover;
+}
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 16px;
+}
+h1,
+h2 {
+  color: white;
+}
+header,
+main {
+  text-align: center;
+  margin: 0 auto;
+}
+header a {
+  color: red;
+  text-rendering: geometricPrecision;
+}
+.link-container {
+  display: flex;
+  justify-content: center;
+}
+.link-container a {
+  display: block;
+  padding: 20px 60px;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 3px #9ff6ad;
+  border-style: double;
+  color: darkblue;
+  background: rgb(189, 229, 245);
+}
+.link-container div + div {
+  margin-left: 10px;
+}

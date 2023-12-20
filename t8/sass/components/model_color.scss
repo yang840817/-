@@ -1,0 +1,48 @@
+@use "../abstracts/" as *;
+
+.model_color {
+  > div {
+    display: flex;
+    padding: 30px 0;
+  }
+  ul {
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 24px;
+    padding: 0;
+    @include breakpoint($lg) {
+      width: unset;
+    }
+  }
+  button {
+    width: 42px;
+    height: 42px;
+    margin: 3px;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    figure {
+      position: relative;
+      margin: 0 auto;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+    &.active,
+    &:focus {
+      outline: 3px solid $blue;
+      figcaption {
+        display: block;
+      }
+    }
+    figcaption {
+      display: none;
+      position: absolute;
+      top: 120%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

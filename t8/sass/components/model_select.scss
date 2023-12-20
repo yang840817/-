@@ -1,0 +1,11 @@
+@use "../abstracts/" as *;
+
+.model_select {
+  > div {
+    padding: 16px 0;
+  }
+  select {
+    width: calc(100% - 32px);
+    padding: 16px;
+  }
+}

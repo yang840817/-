@@ -1,0 +1,33 @@
+@use "../abstracts/" as *;
+
+.model_chip {
+  font-weight: 600;
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    gap: 20px;
+  }
+  span {
+    display: block;
+  }
+  .intel_chip {
+    justify-content: center;
+  }
+  .icon_container {
+    display: flex;
+    gap: 24px;
+  }
+  .apple_chip_icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 72px;
+    height: 72px;
+    background: black;
+    color: white;
+    border-radius: 15px;
+  }
+}

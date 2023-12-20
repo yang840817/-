@@ -1,0 +1,7 @@
+@use "../abstracts/" as *;
+
+.model_price {
+  > div {
+    padding: 30px 0;
+  }
+}

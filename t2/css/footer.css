@@ -1,0 +1,107 @@
+footer {
+  padding: 90px 0 65px 0;
+  text-align: center;
+  background-color: #535151;
+  border-top: 2px solid #312d2d;
+}
+.footer_container > div,
+.footer_community li {
+  display: inline-block;
+  vertical-align: top;
+}
+.footer_container > div > * + *,
+.footer_fill form * + * {
+  margin-top: 5px;
+}
+.footer_container h4 {
+  text-transform: uppercase;
+}
+.footer_container h4,
+.footer_copyright,
+.footer_copyright a {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #cbcbcb;
+}
+.footer_container > div + div {
+  margin-left: 140px;
+}
+.footer_community h4,
+.footer_contact h4,
+.footer_copyright {
+  letter-spacing: 0.2rem;
+}
+.footer_community a,
+.footer_contact a {
+  color: white;
+}
+.footer_community a {
+  display: inline-block;
+  padding: 5px 10px;
+}
+.footer_community a:hover,
+.footer_contact a:hover,
+.footer_copyright a:hover {
+  color: lightsalmon;
+}
+.footer_fill_mail:focus-visible {
+  outline: 1px solid lightsalmon;
+}
+
+.footer_fill_mail,
+.footer_fill_button,
+.footer_contact_tel,
+.footer_contact_mail {
+  display: block;
+}
+.footer_community li + li {
+  margin-left: 10px;
+}
+
+.footer_fill {
+  text-align: initial;
+}
+.footer_fill_mail {
+  width: 340px;
+  height: 35px;
+  background: none;
+  border: 1px solid white;
+  color: white;
+}
+.footer_fill_button {
+  margin-left: auto;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: lighter;
+  border: none;
+  border-radius: 0;
+  background-color: #d3d3d3;
+}
+.footer_fill_mail::placeholder {
+  color: white;
+}
+.footer_contact_tel {
+  font-size: 0.5rem;
+}
+.footer_contact_tel span:nth-child(1),
+.footer_contact_tel span:nth-child(2),
+.footer_contact_tel span:nth-child(4),
+.footer_contact_tel span:nth-child(8),
+.footer_contact_tel span:nth-child(12) {
+  vertical-align: middle;
+}
+.footer_contact_tel span:nth-child(3),
+.footer_contact_tel span:nth-child(5),
+.footer_contact_tel span:nth-child(6),
+.footer_contact_tel span:nth-child(9),
+.footer_contact_tel span:nth-child(11) {
+  vertical-align: sub;
+}
+
+.footer_copyright {
+  margin-top: 70px;
+}
+.footer_copyright a {
+  text-decoration: underline black;
+}

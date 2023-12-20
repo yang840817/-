@@ -1,0 +1,14 @@
+@use "../abstracts" as *;
+
+@use "../components/logo";
+@use "../components/media-link";
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 36px 40px;
+  background: $bg-notes;
+  @include breakpoint($md) {
+    justify-content: space-between;
+  }
+}

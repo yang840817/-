@@ -1,0 +1,7 @@
+@use "../abstracts/" as *;
+
+.model_moreinfo {
+  > div {
+    padding: 16px 0 48px;
+  }
+}
