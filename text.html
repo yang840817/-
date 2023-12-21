@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>rainyday.js demo #4</title>
+    <style media="screen">
+      body {
+        overflow: hidden;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #333;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      #infobox {
+        z-index: 100;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      #infobox div {
+        width: 260px;
+        padding: 15px;
+        background-color: #f2f2f2;
+        visibility: hidden;
+      }
+
+      #infobox:hover div {
+        visibility: visible;
+      }
+    </style>
+    <script src="./js/rainyday.min.js"></script>
+    <script>
+      function run() {
+        var image = document.getElementById("background");
+        image.onload = function () {
+          var engine = new RainyDay({
+            image: this,
+            gravityAngle: Math.PI / 9,
+          });
+          engine.trail = engine.TRAIL_SMUDGE;
+          engine.rain(
+            [
+              [1, 0, 1000],
+              [3, 3, 1],
+            ],
+            100
+          );
+        };
+        image.crossOrigin = "anonymous";
+        image.src = "http://i.imgur.com/VuX2Nf0.jpg";
+        // hide info container
+        document.getElementById("infobox").children[0].style.visibility =
+          "visible";
+        setTimeout(function () {
+          // remove inline style -otherwise the hover effect would not be effective
+          document.getElementById("infobox").children[0].style.visibility = "";
+        }, 5000);
+      }
+    </script>
+  </head>
+
+  <body onload="run();">
+    <img id="background" alt="background" src="" />
+    <div id="infobox">
+      <header>
+        <a href="https://github.com/yang840817?tab=repositories">My Github </a>
+      </header>
+      <main>
+        <section>
+          <h1>切版作品</h1>
+          <div>
+            <h2>原生、無RWD</h2>
+            <div class="link-container">
+              <div><a href="./t1/index.html">t1</a></div>
+              <div><a href="./t2/index.html">t2</a></div>
+            </div>
+          </div>
+          <div>
+            <h2>Bootstrap + RWD</h2>
+            <div class="link-container">
+              <div><a href="./t3/index.html">t3</a></div>
+              <div><a href="./t4/index.html">t4</a></div>
+            </div>
+          </div>
+          <div>
+            <h2>SASS</h2>
+            <div class="link-container">
+              <div><a href="./t6/index.html">t6</a></div>
+              <div><a href="./t8/index.html">t8</a></div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h1>TODOLIST</h1>
+          <div>
+            <h2>使用Airtable API</h2>
+            <div class="link-container">
+              <div>
+                <a href="https://yang840817.github.io/Vanilla_ToDoList/"
+                  >Vanilla JS</a
+                >
+              </div>
+              <div>
+                <a href="https://yang840817.github.io/Vue_ToDoList/">Vue</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
